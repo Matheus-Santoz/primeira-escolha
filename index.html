@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
 </head>
 
-<body>
-
+<body id="body">
     <div class="container">
-
         <div class="header">
-            <div class="menu-container">
+            <div class="menu-container" id="menu-clickable">
                 <i class="fa-solid fa-bars fa-xl"></i>
             </div>
             <div class="pesquisa-container">
@@ -23,15 +21,27 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <div class="menu-collapse-container">
+            <div class="menu-collapse-container" id="menu-collapse">
+                <div class="shadow-menu" id="shadow-menu"></div>
                 <div class="menu-collapse-content">
-                    <div class="exit-icon-container">
+                    <div class="exit-icon-container" id="exit-menu">
                         <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </div>
+                    <div class="menu-links-container">
+                        <div class="menu-link">Início</div>
+                        <div class="menu-link-dropdown" id="joias-dropdown">Jóias</div>
+                        <div class="link-dropdown-container" id="joias-dropdown-content">
+                            <div class="link-dropdown-item">Alianças</div>
+                            <div class="link-dropdown-item">Anéis</div>
+                            <div class="link-dropdown-item">Colares</div>
+                            <div class="link-dropdown-item">Brincos</div>
+                        </div>
+                        <div class="menu-link">Sobre</div>
+                        <div class="menu-link">Suporte</div>   
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="bottom-nav">
             <div class="nav-item">
                 <i class="fa-solid fa-plus"></i>
@@ -49,6 +59,9 @@
         <div class="carrosel-container">
             carrosel de imagens aqui
         </div>
+        <div class="title-produtos">
+            Destaques
+        </div>
         <div class="destaques-container">
             <div class="produto-container">
                 <div class="item-container">
@@ -57,7 +70,7 @@
                         <span>lorem ipsum dolor sit amet consectetur adipisicing elit Quisquam, voluptatibus.</span>
                     </div>
                     <div class="preco-item">
-                        <span>R$149,90</span>
+                        <span>Comprar agora</span>
                     </div>
                 </div>
             </div>
@@ -68,19 +81,7 @@
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</span>
                     </div>
                     <div class="preco-item">
-                        <span>R$149,90</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="produto-container">
-                <div class="item-container">
-                    <div class="img-item"> produto </div>
-                    <div class="desc-item">
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</span>
-                    </div>
-                    <div class="preco-item">
-                        <span>R$149,90</span>
+                        <span>Comprar agora</span>
                     </div>
                 </div>
 
@@ -92,7 +93,19 @@
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</span>
                     </div>
                     <div class="preco-item">
-                        <span>R$149,90</span>
+                        <span>Comprar agora</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="produto-container">
+                <div class="item-container">
+                    <div class="img-item"> produto </div>
+                    <div class="desc-item">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</span>
+                    </div>
+                    <div class="preco-item">
+                        <span>Comprar agora</span>
                     </div>
                 </div>
             </div>
@@ -111,7 +124,7 @@
                         <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</span>
                     </div>
                     <div class="preco-item">
-                        <span>R$149,90</span>
+                        <span>Comprar agora</span>
                     </div>
                 </div>
             </div>
@@ -120,4 +133,5 @@
     </div>
 </body>
 <script src="styles.js"></script>
+
 </html>
