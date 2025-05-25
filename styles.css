@@ -20,10 +20,11 @@
 .link-dropdown-container {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 0px 40px;
+    padding: 0 0 0 40px;
     border-bottom: 1px solid rgb(134, 134, 134);
-    height: 0vh;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
     visibility: hidden;
 }
 
@@ -34,7 +35,6 @@
     align-items: center;
     height: 8vh;
 }
-
 
 .shadow-menu {
     width: 100%;
@@ -103,13 +103,7 @@
 
 .active{
     visibility: visible;
-    height: fit-content;
-    transition: height 0.3s ease;
-}
-
-.active-sign{
-    visibility: visible;
-    transition: height 0.3s ease;
+    max-height: 1000px; /* ou o suficiente pro conteúdo */
 }
 
 .menu-link-dropdown::before {

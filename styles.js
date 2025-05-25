@@ -25,9 +25,10 @@ shadowMenu.addEventListener("click", () => {
 
 // O código abaixo controla a exibição do dropdown "jóias" do menu lateral
 const btnDropdownMenu = document.getElementById("joias-dropdown");
-const dropdownContent = document.getElementById("joias-dropdown-content");
+const dropDownContent = document.getElementById("joias-dropdown-content");
 
 btnDropdownMenu.addEventListener("click", () => {
-    dropdownContent.classList.toggle("active");
+    dropDownContent.classList.toggle("active");
     btnDropdownMenu.classList.toggle("active-sign");
 });
+
