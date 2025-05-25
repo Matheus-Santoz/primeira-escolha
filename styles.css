@@ -9,6 +9,8 @@
     display: flex;
     background-color: rgb(196, 196, 196);
     margin-top: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -27,7 +29,7 @@
 
 
 body {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -54,14 +56,24 @@ body {
 
     .produto-container {
         padding: 2%;
+        max-width: 50%;
         flex: 1 1 calc(50% - 8px);
         height: 40vh;
+    }
+
+    .produto-container-ad {
+        padding: 2%;
+        flex: 1 1 calc(100% - 8px);
+        height: 35vh;
     }
 
     .img-item {
         width: 100%;
         height: 60%;
         object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(196, 196, 196);
     }
 
@@ -86,27 +98,39 @@ body {
         word-break: break-word;
     }
 
+    .desc-item-ad {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        margin: 0;
+        align-items: center;
+
+    }
+
     .preco-item {
         width: 100%;
         height: 15%;
         display: flex;
         align-items: center;
     }
+
     .preco-item span {
         color: rgb(16, 153, 16);
         font-size: 17px;
         font-weight: 600;
 
     }
+
     .bottom-nav {
         width: 100%;
-        height: 70px;
+        height: 60px;
         position: fixed;
         background-color: white;
         bottom: 0;
         z-index: 9999;
         display: flex;
         justify-content: space-around;
+        box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.1);
         align-items: center;
     }
 
@@ -115,6 +139,10 @@ body {
         flex-direction: column;
         align-items: center;
         flex: 1;
+    }
+
+    .nav-item span {
+        font-size: 15px;
     }
 
     .menu-container {
@@ -136,7 +164,7 @@ body {
         align-items: center;
         height: 60px;
         padding: 5px;
-        box-shadow: 0 4px 4px 10px 10px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
     }
 
     .pesquisa-container {
